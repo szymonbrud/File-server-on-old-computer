@@ -1,15 +1,44 @@
 body{
   width:100%;
-  padding: 0px;
-  margin:0px;
-  background-color: #e5e5e5;
+  padding: 0%;
+  margin:0%;
   font-family: 'Arial','sans','fantasy';
-  font-size:30px;
+  font-size:200%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #title{
-  width: 100%;
-  margin:120px 0px 0px 0px;
+  margin:25% 0% 0% 0%;
   text-align: center;
+}
+#iconmobile{
+width: 70%;
+height: 80%;
+margin-top: 15%;
+}
+
+#pass{
+  width: 760px;
+  height: 100px;
+  background-color: #F3F3F3;
+  border:1px solid #e1e1e1;
+  color:#8A8A8A;
+  border-radius: 20px;
+  margin-top: 20%;
+  padding:5%;
+  font-size: 65px;
+}
+#confirm{
+  width: 405px;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15%;
+ background-color:#2768E2 ;
+ border: none;
+ color:#ffffff;
+ font-size: 60px;
+ border-radius: 20px;
 }
