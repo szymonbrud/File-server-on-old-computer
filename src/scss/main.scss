@@ -1,44 +1,69 @@
-body{
-  width:100%;
+@import './colors.scss';
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
   padding: 0%;
-  margin:0%;
-  font-family: 'Arial','sans','fantasy';
-  font-size:200%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#title{
-  margin:25% 0% 0% 0%;
-  text-align: center;
-}
-#iconmobile{
-width: 70%;
-height: 80%;
-margin-top: 15%;
+  margin: 0%;
+  height: 100vh;
 }
 
-#pass{
-  width: 760px;
-  height: 100px;
-  background-color: #F3F3F3;
-  border:1px solid #e1e1e1;
-  color:#8A8A8A;
-  border-radius: 20px;
-  margin-top: 20%;
-  padding:5%;
-  font-size: 65px;
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#confirm{
-  width: 405px;
-  height: 140px;
-  display: block;
-  margin: 0 auto;
+
+#pass {
+  font-size: 18px;
+}
+
+#title {
+  font-weight: 700;
+  align-items: center;
+  font-size: 24px;
+  margin: 0 0 41px 0;
+}
+
+#iconmobile {
+  width: 65%;
   margin-top: 15%;
- background-color:#2768E2 ;
- border: none;
- color:#ffffff;
- font-size: 60px;
- border-radius: 20px;
+}
+
+#inputPassord {
+  height: 54px;
+  width: 287px;
+  max-width: 90%;
+  background: #F3F3F3;
+  border-radius: 5px;
+  padding: 0 0 0 21px;
+  box-sizing: border-box;
+  border: 2px solid #E1E1E1;
+  margin-top: 81px;
+  font-size: 18px;
+  color: #303030;
+
+  &::placeholder {
+    color: #8A8A8A;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #2768E2;
+  }
+}
+
+#confirm{
+  width: 135px;
+  background-color: $blue;
+  height: 45px;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 40px;
 }
