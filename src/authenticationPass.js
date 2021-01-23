@@ -7,14 +7,28 @@ function main() {
   confButt.addEventListener('click', function () {
     axios
       .post('http://localhost:8001/authenticationPassword', {
-        password: 'haslo',
+        password: inpPassVal.value,
       })
       .then(function (response) {
-        console.log(response);
+        console.log(response.data.auth)
+
+       
+        if(response.data.auth)
+        {
+          console.log('Jpo')
+        }
+        else{
+          const wrongPass = document.querySelector('#wrongPass');
+          inpPassVal.style.border = '2px solid #E2273D';
+          wrongPass.style.display = 'block';
+        }
+
       })
       .catch(function (error) {
-        console.log(error);
+        console.log(error)
+       
       });
+    
   });
 }
 
