@@ -15,7 +15,7 @@ function main() {
        
         if(response.data.auth)
         {
-          console.log('Jpo')
+          
         }
         else{
           const wrongPass = document.querySelector('#wrongPass');
