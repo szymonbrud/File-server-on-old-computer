@@ -34,7 +34,7 @@ body {
   margin-top: 15%;
 }
 
-#inputPassord {
+#inputPassword {
   height: 54px;
   width: 287px;
   max-width: 90%;
@@ -66,4 +66,10 @@ body {
   border-radius: 5px;
   border: none;
   margin-top: 40px;
+}
+
+#wrongPass{
+  color: $red;
+  width: 287px;
+  display:none;
 }
